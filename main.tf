@@ -7,4 +7,5 @@ resource "aws_instance" "george_appn" {
   tags = {
     Name = "george-appn"
   }
+  user_data = file("userdata.sh")
 }
