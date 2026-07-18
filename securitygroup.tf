@@ -1,7 +1,7 @@
 resource "aws_security_group" "george_sg" {
   name        = "george_sg"
   description = "Security group for george_appn"
-  vpc_id      = "vpc-0f8ffa69427e755ff"
+  vpc_id      = var.vpc_id
 
 }
 

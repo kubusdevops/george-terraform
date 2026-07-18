@@ -1,0 +1,5 @@
+ami = "ami-01edba92f9036f76e"
+instance_type = "t3.micro"
+vpc_id = "vpc-0f8ffa69427e755ff"
+key_name = "kubuskey"
+environment = "qa"

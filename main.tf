@@ -1,11 +1,11 @@
 resource "aws_instance" "george_appn" {
-  ami             = "ami-01edba92f9036f76e"
-  instance_type   = "t3.micro"
+  ami             = var.ami
+  instance_type   = var.instance_type
   key_name        = "kubuskey"
   security_groups = [aws_security_group.george_sg.name]
 
   tags = {
-    Name = "george-appn"
+    Name = "george-appn-${var.environment}"
   }
   user_data = file("userdata.sh")
 }

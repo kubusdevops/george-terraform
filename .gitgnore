@@ -1,0 +1,13 @@
+# Ignore the local Terraform working directory (plugins and modules)
+.terraform/
+
+# Ignore sensitive variable files (hides dev.tfvars and qa.tfvars)
+*.tfvars
+
+# Ignore saved execution plans (hides plan.out)
+*.out
+*.tfplan
+
+# Ignore local state files
+*.tfstate
+*.tfstate.*
